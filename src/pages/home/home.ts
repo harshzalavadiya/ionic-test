@@ -7,8 +7,13 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  someArray = [];
 
+  constructor(public navCtrl: NavController) {
+    this.someArray = ['foo', 'bar', 'baz'];
+  }
+
+  ionViewDidLoad() {
   }
 
 }
